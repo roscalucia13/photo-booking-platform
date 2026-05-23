@@ -1,0 +1,289 @@
+.recenzii-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.recenzii-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.recenzii-tab-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+  margin: 0 auto 30px;
+}
+
+.recenzii-tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 180px;
+}
+
+.recenzii-tab.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.recenzii-tab-content {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.recenzii-empty-state {
+  text-align: center;
+  color: #666;
+  margin-top: 60px;
+}
+
+.recenzii-empty-icon {
+  font-size: 48px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+
+
+
+.lista-recenzii {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-recenzii {
+  display: flex;
+  align-items: center;
+  background-color: #fff8f0;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px 16px;
+  gap: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card-recenzii:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-recenzii img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f5c29a;
+}
+
+.card-recenzii .info {
+  flex: 1;
+}
+
+.card-recenzii .info p {
+  margin: 4px 0;
+}
+
+.text-recenzie {
+  font-style: italic;
+  color: #444;
+}
+
+.btn-recenzie {
+  padding: 6px 14px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.btn-recenzie:hover {
+  background-color: #333;
+}
+
+
+
+.formular-recenzie {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fdf8f2;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.formular-recenzie .stele {
+  font-size: 22px;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.formular-recenzie .stele span:hover,
+.formular-recenzie .stele span.hovered,
+.formular-recenzie .stele span.selected {
+  color: #f5b301;
+}
+
+.formular-recenzie textarea {
+  resize: vertical;
+  min-height: 60px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.formular-recenzie button {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.formular-recenzie button:hover {
+  background-color: #333;
+}
+
+
+
+
+
+.recenzie-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-profil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f5c29a;
+}
+
+.detalii-nume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detalii-nume strong {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.data-recenzie {
+  font-size: 13px;
+  color: #888;
+}
+
+.rating {
+  font-size: 18px;
+  color: #f5b301;
+  margin: 8px 0 4px 0;
+}
+
+.text-recenzie {
+  font-style: italic;
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.actiuni-recenzie {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.icon-btn:hover {
+  color: #000;
+}
+
+
+
+/* ===== Secțiunea de editare a recenziei (implicită în codul existent) ===== */
+.card-recenzii.complet textarea {
+  resize: vertical;
+  min-height: 60px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #fdf8f2;
+}
+
+.card-recenzii.complet .stele {
+  font-size: 22px;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+  margin: 10px 0;
+}
+
+.card-recenzii.complet .stele span.selected,
+.card-recenzii.complet .stele span:hover {
+  color: #f5b301;
+}
+
+.card-recenzii.complet button {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.card-recenzii.complet button:hover {
+  background-color: #333;
+}

@@ -1,0 +1,129 @@
+/* ====== Container principal pentru formular ====== */
+.auth-container {
+    width: 100%;
+    max-width: 400px; 
+    margin: 80px auto 20px; 
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* ====== Stilizare titlu ====== */
+  .auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* ====== Stilizare input-uri și dropdown-uri ====== */
+  .auth-container input,
+  .auth-container select {
+    width: 90%; 
+    padding: 12px;
+    margin: 10px auto; 
+    display: block; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left; 
+  }
+  
+  /* ====== Stilizare buton ====== */
+  .auth-button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #c69c6d; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .auth-button:hover {
+    background-color: #b88c5a; 
+  }
+  
+  /* ====== Link "Forgot Password" ====== */
+  .forgot-password {
+    color: #c69c6d;
+    font-size: 14px;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+  
+  /* ====== Separator "Or" ====== */
+  .or-divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  .or-divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  /* ====== Buton de creare cont ====== */
+  .create-account-btn {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .create-account-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* ====== Opțiuni pentru alegerea tipului de cont ====== */
+  .account-option {
+    display: block;
+    background-color: #c69c6d;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .account-option:hover {
+    background-color: #b88c5a;
+  }
+  
+  /* ====== Link "Ai deja un cont?" ====== */
+  .switch-auth {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .switch-auth a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* Stil pentru etichetele mici deasupra dropdown-urilor */
+.small-label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0 2px 5%;
+}

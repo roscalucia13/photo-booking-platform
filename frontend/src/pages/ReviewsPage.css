@@ -1,0 +1,99 @@
+.reviews-page {
+  position: relative;
+}
+
+.reviews-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 100px auto 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating-section {
+  flex: 1;
+  text-align: center;
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+}
+
+.rating-section h2 {
+  font-size: 48px;
+  color: #333;
+}
+
+.stars {
+  font-size: 24px;
+  color: #f0ad4e;
+}
+
+.distribution-section {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.distribution-row {
+  margin-bottom: 15px; /* mai mult spațiu între rânduri */
+  display: flex;
+  align-items: center;
+}
+
+.distribution-row progress {
+  flex-grow: 1;
+  margin: 0 10px; /* spațiu între text și bară */
+  height: 15px;
+}
+
+.reviews-list {
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-item {
+  background-color: #f9f9f9;
+  border-left: 5px solid #f0ad4e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.reviews-item p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.reviews-item strong {
+  color: #333;
+}
+
+.reviews-no-message {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+
+.total-reviews {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}

@@ -1,0 +1,137 @@
+.notifications-wrapper {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notificare-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff8f0;
+  border: 1px solid #e5e5e5;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.notificare-card:hover {
+  background-color: #fdf0e3;
+}
+
+.notificare-card.citita {
+  opacity: 0.7;
+  background-color: #f2f2f2;
+}
+
+.notificare-avatar {
+  margin-right: 15px;
+}
+
+.avatar-client {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  font-size: 50px;
+  color: #ccc;
+}
+
+.notificare-content {
+  flex-grow: 1;
+}
+
+.notificare-titlu {
+  font-size: 16px;
+  margin: 0;
+}
+
+.notificare-timp {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.notificare-feedback {
+  background-color: #e7f3e7;
+  color: #2f6627;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #a3d5a3;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+
+
+
+/* Modal overlay */
+.modal-rezervare-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 30, 30, 0.4);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal box */
+.modal-rezervare {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 25px 20px 25px;
+  min-width: 320px;
+  max-width: 98vw;
+  max-height: 90vh;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: scaleUp 0.18s;
+}
+@keyframes scaleUp {
+  from { transform: scale(0.92);}
+  to { transform: scale(1);}
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.modal-nume {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.modal-body p {
+  margin: 7px 0;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 14px;
+}

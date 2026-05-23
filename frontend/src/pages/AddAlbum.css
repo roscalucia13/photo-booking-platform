@@ -1,0 +1,54 @@
+/* ====== Container general ====== */
+.add-album-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .add-album-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* ====== Form ====== */
+  .add-album-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-album-form label {
+    font-weight: bold;
+    text-align: left;
+    color: #444;
+  }
+  
+  .add-album-form input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-album-form button {
+    padding: 12px;
+    background-color: #c69c6d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .add-album-form button:hover {
+    background-color: #b88c5a;
+  }
+  

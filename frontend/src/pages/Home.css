@@ -1,0 +1,235 @@
+/* ====== Container principal ====== */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+/* ====== Secțiunea principală ====== */
+.main-content, .extra-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 0; /* Padding doar pentru conținut */
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-text {
+  width: 50%;
+  text-align: left;
+}
+
+.home-text h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.home-text p {
+  font-size: 18px;
+  color: #555;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #b88c5a;
+}
+
+.home-image {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ====== Secțiunea extra ====== */
+.extra-content {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.extra-content h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.extra-content p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.register-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #b88c5a;
+}
+
+/* ====== Footer ====== */
+.footer-section {
+  background-color: #e4e3e3;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* distribuie coloanele echilibrat */
+  flex-wrap: wrap;
+}
+
+.footer-links, .footer-photo, .footer-discover {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-links ul, .footer-photo ul, .footer-discover ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li, .footer-photo li, .footer-discover li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer-links li:hover, .footer-photo li:hover, .footer-discover li:hover {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-bottom h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.chat-support {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-support:hover {
+  background-color: #b88c5a;
+}
+
+/* ====== Responsivitate ====== */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .home-image {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .home-image img {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .chat-support {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+/* ====== Global ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.footer-links li, .footer-photo li, .footer-discover li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #333;
+  text-decoration: none; /* Elimină sublinierea */
+  font-size: 17px; /* Noua dimensiune */
+}
+
+.footer-links li, .footer-links a {
+  text-decoration: none;
+}
+
+/* ADĂUGĂ AICI: */
+.footer-links h4, .footer-photo h4, .footer-discover h4 {
+  margin-bottom: 0;
+}

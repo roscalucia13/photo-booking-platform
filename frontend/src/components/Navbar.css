@@ -1,0 +1,156 @@
+/* ======= NAVBAR SUS (Desktop + Mobil) ======= */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* ======= Logo-ul ======= */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px; /* Mută logo-ul mai spre interior */
+}
+
+.logo-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* ======= Iconițele din navbar (pe desktop) ======= */
+.nav-icons {
+  display: flex;
+  gap: 80px;
+}
+
+.nav-icons a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* ======= Iconița pentru autentificare ======= */
+.auth-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 35px; /* Mută mai spre stânga */
+}
+
+
+.auth-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.auth-icon {
+  color: white;
+  font-size: 20px;
+}
+
+/* ======= NAVBAR JOS (Doar pe Mobil) ======= */
+.bottom-navbar {
+  display: none;
+}
+
+/* ======= Adaptare pentru Mobil ======= */
+@media screen and (max-width: 768px) {
+  .top-navbar {
+    padding: 10px;
+  }
+
+  .nav-icons {
+    display: none; /* Ascundem iconițele din mijloc pe mobil */
+  }
+
+  .bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #333333;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .bottom-navbar a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+}
+
+
+
+
+.auth-icons {
+  position: relative;
+  display: inline-block;
+}
+
+.auth-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.auth-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 0;
+  z-index: 9999; /* foarte important */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}

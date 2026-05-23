@@ -1,0 +1,144 @@
+.album-details-container {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.album-details-container .album-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.album-details-container .album-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.album-details-container .input-title {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.album-details-container .album-header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.album-details-container .album-header-actions .edit-icon, 
+.album-details-container .album-header-actions .delete-icon {
+  cursor: pointer;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.album-details-container .album-header-actions .edit-icon:hover {
+  color: #007bff;
+}
+
+.album-details-container .album-header-actions .delete-icon:hover {
+  color: #333;
+}
+
+.album-details-container .album-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  gap: 15px;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.album-details-container .poza-card {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.album-details-container .poza-card img, 
+.album-details-container .poza-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.album-details-container .remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #333;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 18px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.album-details-container .remove-icon:hover {
+  background-color: #333;
+  color: white;
+}
+
+.album-details-container .add-photo-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px; /* Adăugăm colțuri rotunjite, la fel ca la celelalte cartonașe */
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.album-details-container .add-photo-card label {
+  cursor: pointer;
+}
+
+.album-details-container .add-photo-card:hover {
+  background-color: #f0f0f0;
+}
+
+.album-details-container button {
+  padding: 8px 16px;
+  background-color: #9a7449;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.album-details-container button:hover {
+  background-color: #e1ba8c;
+}
+
+.album-details-container .poza-card.marked {
+  opacity: 0.5;
+  border: 2px dashed #333;
+}
+
+
+.album-details-container .save-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrare pe orizontală */
+  margin-top: 10px; /* Spațiu deasupra */
+}

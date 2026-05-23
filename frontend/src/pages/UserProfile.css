@@ -1,0 +1,181 @@
+.user-profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px 50px 50px;
+  min-height: 100vh;
+  position: relative;
+  background-color: #f9f9f9;
+  gap: 60px; /* spațiere între coloane */
+}
+
+/* secțiunea cu datele utilizatorului (stânga) */
+.user-info {
+  text-align: center;
+  width: 250px;
+}
+
+/* containerul imaginii de profil cu butonul "+" */
+.client-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* imaginea reală */
+.client-profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* iconița implicită (când nu există poză) */
+.client-profile-placeholder {
+  font-size: 130px;
+  color: #ccc;
+}
+
+/* butonul "+" pentru upload */
+.client-upload-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* nume + email */
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 14px;
+}
+
+/* buton de editare */
+.user-btn {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* secțiunile din dreapta – rezervări și recenzii */
+.user-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centru vertical */
+  align-items: center;     /* centru orizontal */
+  min-height: 100%;
+  padding-top: 20px;
+}
+
+/* titluri */
+.user-section h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* mesaje */
+.empty-message {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* iconița setări jos */
+.user-settings-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.user-subsections {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-box {
+  text-align: center;
+  width: 220px;
+}
+
+
+
+.edit-nume-input {
+  width: 180px;
+  padding: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+
+.user-subsections {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.user-box {
+  text-align: center;
+  width: 240px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-box h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.user-box-clickable {
+  cursor: pointer;
+}
+
+.user-box-clickable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
